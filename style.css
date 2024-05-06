@@ -1,0 +1,104 @@
+li {
+    list-style: none;
+}
+
+b {
+    font-size: 0.8rem;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #4c94ff, #b772ef);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    color: white;
+  }
+  
+  .gradient-text {
+    color: transparent;
+    background-image: linear-gradient(300deg, #00bfff, #4c94ff, #b772ef);
+    background-size: 180% 180%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+  .btn-gradient {
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(300deg, #00bfff, #4c94ff, #b772ef) border-box;
+    border: 3px solid transparent;
+    margin: 0;
+    font-weight: bold;
+    -webkit-text-fill-color: black;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .box {
+    background-color: #ffffff30;
+    border-radius: 5px;
+  }
+
+  h1 {
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .profile-img {
+    width: 500px;
+    height: 500px;
+    border: transparent;
+    border-radius: 50%;
+  }
+
+  /* For Icons  */
+  .feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #ffff;
+    border-radius: .75rem;
+  }
+
+  .bg-gradient {
+    --bs-gradient: linear-gradient(300deg, #00bfff, #4c94ff, #b772ef);
+    background-image: var(--bs-gradient) !important;
+  }
+
+    .size-img {
+      height: auto;
+      width: 315px;
+    }
+    
+    .gdsize {
+      display: grid;
+      background-color: rgb(212, 209, 209);
+      gap: 10px;
+      grid-template-columns: auto auto auto auto;
+      grid-row: auto auto auto;
+    }
+
+    /* at most a 4x3 grid like only 4 rows later too long */
+
+    .poster {
+      grid-row: span 2;
+      grid-column: span 2;
+      height: auto;
+      width: 315px;
+    }
