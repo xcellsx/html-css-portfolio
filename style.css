@@ -101,7 +101,7 @@ b {
       gap: 1em; /* Adjust spacing with em or rem units */
     }
     
-/*     /* Optional: Responsive image handling (consider using srcset or picture element) */
-    img {
+    /* Optional: Responsive image handling (consider using srcset or picture element) */
+    .img1 {
       width: 100%; /* Ensure images fill their container's width */
-    } */
+    }
