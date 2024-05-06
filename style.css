@@ -81,24 +81,27 @@ b {
     background-image: var(--bs-gradient) !important;
   }
 
-    .size-img {
-      height: auto;
-      width: 315px;
-    }
-    
-    .gdsize {
-      display: grid;
-      background-color: rgb(212, 209, 209);
-      gap: 10px;
-      grid-template-columns: auto auto auto auto;
-      grid-row: auto auto auto;
-    }
-
-    /* at most a 4x3 grid like only 4 rows later too long */
-
     .poster {
       grid-row: span 2;
       grid-column: span 2;
       height: auto;
       width: 315px;
+    }
+
+    .size-img {
+      height: auto;
+      width: 100%; /* Images fill entire cell width */
+    }
+    
+    .gdsize {
+      display: grid;
+      background-color: rgb(212, 209, 209);
+      grid-template-rows: repeat(3, 1fr); /* Three rows of equal height */
+      grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+      gap: 1em; /* Adjust spacing with em or rem units */
+    }
+    
+    /* Optional: Responsive image handling (consider using srcset or picture element) */
+    img {
+      width: 100%; /* Ensure images fill their container's width */
     }
