@@ -1,0 +1,144 @@
+li {
+    list-style: none;
+}
+
+b {
+    font-size: 0.8rem;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #4c94ff, #b772ef);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    color: white;
+  }
+  
+  .gradient-text {
+    color: transparent;
+    background-image: linear-gradient(300deg, #00bfff, #4c94ff, #b772ef);
+    background-size: 180% 180%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+  #about-me button {
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(300deg, #00bfff, #4c94ff, #b772ef) border-box;
+    border: 15px solid transparent;
+    margin: 0;
+    padding: 0;
+    -webkit-text-fill-color: black;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+  #about-me button:hover {
+    background: linear-gradient(300deg, #00bfff, #4c94ff, #b772ef);
+    border: 0px;
+    margin: 0;
+    -webkit-text-fill-color: white;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .box {
+    background-color: #ffffff30;
+    border-radius: 5px;
+  }
+
+  h1 {
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .profile-img {
+    width: 500px;
+    height: 500px;
+    border: transparent;
+    border-radius: 50%;
+  }
+
+  /* For Icons  */
+  .feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #ffff;
+    border-radius: .75rem;
+  }
+
+  .bg-gradient {
+    --bs-gradient: linear-gradient(300deg, #00bfff, #4c94ff, #b772ef);
+    background-image: var(--bs-gradient) !important;
+  }
+
+    .poster {
+      grid-row: span 2;
+      grid-column: span 2;
+      height: auto;
+      width: 315px;
+    }
+
+    .size-img {
+      height: auto;
+      width: 100%; /* Images fill entire cell width */
+    }
+    
+    .gdsize {
+      display: grid;
+      background-color: rgb(212, 209, 209);
+      grid-template-rows: repeat(3, 1fr); /* Three rows of equal height */
+      grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+      gap: 1em; /* Adjust spacing with em or rem units */
+    }
+    
+    /* Optional: Responsive image handling (consider using srcset or picture element) */
+    .img1 {
+      width: 100%; /* Ensure images fill their container's width */
+    }
+
+    .dot {
+      list-style: disc;
+    }
+
+/* Button for project cards */
+#project-cards button {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(300deg, #00bfff, #4c94ff, #b772ef) border-box;
+  border: 15px solid transparent;
+  margin: 0;
+  padding: 0;
+  -webkit-text-fill-color: black;
+  animation: gradient-animation 18s ease infinite;
+}
+
+#project-cards button:hover {
+  background: linear-gradient(300deg, #00bfff, #4c94ff, #b772ef);
+  border: 0px;
+  margin: 0;
+  -webkit-text-fill-color: white;
+  animation: gradient-animation 18s ease infinite;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1px; /* Spacing between cards */
+}
