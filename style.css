@@ -6,6 +6,14 @@ b {
     font-size: 0.8rem;
 }
 
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
 .gradient-background {
     background: linear-gradient(300deg, #00bfff, #4c94ff, #b772ef);
     background-size: 180% 180%;
@@ -41,17 +49,7 @@ b {
     animation: gradient-animation 18s ease infinite;
   }
 
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+
 
   .box {
     background-color: #ffffff30;
@@ -141,4 +139,70 @@ b {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1px; /* Spacing between cards */
+}
+
+#aboutme button:hover {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(300deg, #00bfff, #4c94ff, #b772ef) border-box;
+  border: 15px solid transparent;
+  margin: 0;
+  padding: 0;
+  -webkit-text-fill-color: black;
+  animation: gradient-animation 18s ease infinite;
+}
+
+#aboutme button {
+  background: linear-gradient(300deg, #00bfff, #4c94ff, #b772ef);
+  border: 0px;
+  margin: 0;
+  -webkit-text-fill-color: white;
+  animation: gradient-animation 18s ease infinite;
+}
+
+#resume button:hover {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(300deg, #00bfff, #4c94ff, #b772ef) border-box;
+  border: 15px solid transparent;
+  margin: 0;
+  padding: 0;
+  -webkit-text-fill-color: black;
+  animation: gradient-animation 18s ease infinite;
+}
+
+#resume button {
+  background: linear-gradient(300deg, #00bfff, #4c94ff, #b772ef);
+  border: 0px;
+  margin: 0;
+  -webkit-text-fill-color: white;
+  animation: gradient-animation 18s ease infinite;
+}
+
+#contactme button:hover {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(300deg, #00bfff, #4c94ff, #b772ef) border-box;
+  border: 15px solid transparent;
+  margin: 0;
+  padding: 0;
+  -webkit-text-fill-color: black;
+  animation: gradient-animation 18s ease infinite;
+}
+
+#contactme button {
+  background: linear-gradient(300deg, #00bfff, #4c94ff, #b772ef);
+  border: 0px;
+  margin: 0;
+  -webkit-text-fill-color: white;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
